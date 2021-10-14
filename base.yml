@@ -1,0 +1,5 @@
+- name: configuracao basica
+  hosts: all
+  roles:
+    - role: base
+    - role: ssh
