@@ -1,4 +1,4 @@
-- name: configuracao basica
+- name: base linux
   hosts: all
   roles:
     - role: base

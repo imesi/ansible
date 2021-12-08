@@ -1,0 +1,8 @@
+# base e ssh vêm do base.yml
+- name: lab
+  hosts: lab
+  roles:
+    - role: sssd
+    - role: pam_mount
+    - role: ui
+    - role: lab

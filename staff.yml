@@ -1,0 +1,5 @@
+# base e ssh vêm do base.yml
+- name: staff
+  hosts: staff
+  roles:
+    - role: ui
