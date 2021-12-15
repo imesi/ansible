@@ -2,4 +2,4 @@
   hosts: windows
   vars_files: playbook_vars/windows.yml
   roles:
-    - role: winbase
+    - role: win_base
