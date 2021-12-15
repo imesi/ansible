@@ -1,0 +1,5 @@
+- name: Configuração básica das máquinas Windows
+  hosts: windows
+  vars_files: playbook_vars/windows.yml
+  roles:
+    - role: win_base

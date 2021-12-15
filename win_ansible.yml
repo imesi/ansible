@@ -1,6 +1,7 @@
 ---
 - name: Windows WinRM Ansible
-  hosts: windows_setup
+  hosts: windows
+  vars_files: playbook_vars/windows_setup.yml
   tasks:
     - name: Cria o usuário do Ansible
       ansible.windows.win_user:
