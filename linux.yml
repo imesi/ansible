@@ -1,0 +1,32 @@
+# no futuro esse playbook pode ser desmembrado
+# grupos com playbook próprio: lab e staff
+
+- name: cloud linux
+  hosts: cloud
+  roles:
+    - role: base
+    - role: ssh
+
+- name: container linux
+  hosts: container
+  roles:
+    - role: base
+    - role: ssh
+
+- name: pve host linux
+  hosts: pve
+  roles:
+    - role: base
+    - role: ssh
+
+- name: ssh server linux
+  hosts: ssh
+  roles:
+    - role: base
+    - role: ssh
+
+- name: web linux
+  hosts: web
+  roles:
+    - role: base
+    - role: ssh

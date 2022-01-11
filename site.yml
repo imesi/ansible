@@ -1,5 +1,0 @@
-# importa todos os playbooks
-# por ora, nada diverge nas máquinas que não seja obtido via variável
-- import_playbook: base.yml
-- import_playbook: lab.yml
-- import_playbook: staff.yml

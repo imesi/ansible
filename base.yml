@@ -1,5 +1,0 @@
-- name: base linux
-  hosts: all
-  roles:
-    - role: base
-    - role: ssh
