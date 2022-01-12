@@ -1,5 +1,5 @@
 - name: Configuração das máquinas Windows de sala de aula
-  hosts: classroom
+  hosts: win_classroom
   vars_files: playbook_vars/windows.yml
   roles:
     - role: win_base

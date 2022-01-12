@@ -1,0 +1,8 @@
+- name: classroom
+  hosts: classroom
+  roles:
+    - role: base
+    - role: ssh
+    - role: ui
+    - role: classroom
+    - role: lab
