@@ -5,4 +5,3 @@
     - role: ssh
     - role: ui
     - role: classroom
-    - role: lab
