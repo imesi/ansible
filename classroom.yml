@@ -3,5 +3,6 @@
   roles:
     - role: base
     - role: ssh
+    - role: grub
     - role: ui
     - role: classroom

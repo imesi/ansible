@@ -3,6 +3,7 @@
   roles:
     - role: base
     - role: ssh
+    - role: grub
     - role: sssd
     - role: pam_mount
     - role: ui
