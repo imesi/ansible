@@ -1,0 +1,7 @@
+- name: bib
+  hosts: bib
+  roles:
+    - role: base
+    - role: ssh
+    - role: ui
+    - role: bib
