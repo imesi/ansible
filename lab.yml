@@ -8,3 +8,4 @@
     - role: pam_mount
     - role: ui
     - role: lab
+    - role: rcran
