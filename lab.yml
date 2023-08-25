@@ -4,8 +4,9 @@
     - role: base
     - role: ssh
     - role: grub
-    - role: sssd
+    - role: sssd-ad
     - role: pam_mount
     - role: ui
+    - role: dev
     - role: lab
     - role: rcran
