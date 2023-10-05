@@ -3,4 +3,5 @@
   roles:
     - role: base
     - role: ssh
+    - role: cups_client
     - role: ui
