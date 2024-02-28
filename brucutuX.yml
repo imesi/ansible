@@ -1,5 +1,5 @@
-- name: lab
-  hosts: lab
+- name: brucutuX
+  hosts: brucutuX
   roles:
     - role: base
     - role: ssh
