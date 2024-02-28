@@ -1,0 +1,8 @@
+- name: lab
+  hosts: lab
+  roles:
+    - role: base
+    - role: ssh
+    - role: sssd-ad
+    - role: pam_mount
+    - role: dev
