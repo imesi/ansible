@@ -1,0 +1,9 @@
+- name: brucutuX
+  hosts: brucutuX
+  roles:
+    - role: base
+    - role: ssh
+    - role: sssd-ad
+    - role: pam_mount
+    - role: dev
+    - role: brucutu
