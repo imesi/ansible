@@ -19,11 +19,20 @@
     - role: base
     - role: ssh
 
+- name: nfs cloud linux
+  hosts: nfs
+  roles:
+    - role: base
+    - role: ssh
+    - role: sssd-ad
+
 - name: ssh server linux
   hosts: ssh
   roles:
     - role: base
     - role: ssh
+    - role: sssd-ad
+# open_to: authusers
 
 - name: web linux
   hosts: web
