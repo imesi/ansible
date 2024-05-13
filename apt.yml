@@ -1,0 +1,23 @@
+- name: apt update/upgrade
+  hosts: all
+  tasks:
+    - name: apt update
+      ansible.builtin.apt:
+        update_cache: yes
+        cache_valid_time: 86400
+      tags: upgrade
+
+    - name: verifica se há pacotes pedindo upgrade
+      ansible.builtin.command:
+        cmd: aptitude search ~U
+      register: aptitude_upgradable
+      changed_when: aptitude_upgradable.rc == 0
+      failed_when: aptitude_upgradable.rc >= 2
+      tags: upgrade
+
+    - name: apt upgrade
+      ansible.builtin.apt:
+        upgrade: yes
+        force_apt_get: true
+      when: aptitude_upgradable.changed
+      tags: upgrade
