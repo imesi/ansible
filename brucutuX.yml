@@ -3,6 +3,7 @@
   roles:
     - role: base
     - role: ssh
+      open_to: authusers
     - role: sssd-ad
     - role: pam_mount
     - role: dev

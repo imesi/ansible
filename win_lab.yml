@@ -1,0 +1,8 @@
+- name: Configuração básica das máquinas Windows
+  hosts: win_lab:win_profs
+  vars_files: playbook_vars/windows.yml
+  roles:
+    - role: win_base
+    - role: win_fsecure
+    - role: win_ocs
+    - role: win_lab
