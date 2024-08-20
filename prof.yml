@@ -2,7 +2,7 @@
   hosts: prof
   roles:
     - role: base
-    - role: cups-client
+    - role: cups_client
     - role: ui
     - role: dev
     - role: dev-x
