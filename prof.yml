@@ -1,0 +1,8 @@
+- name: prof
+  hosts: prof
+  roles:
+    - role: base
+    - role: cups-client
+    - role: ui
+    - role: dev
+    - role: dev-x
