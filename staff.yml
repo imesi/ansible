@@ -4,5 +4,6 @@
     - role: base
     - role: ssh
     - role: cups_client
+    - role: ocs
     - role: sssd-ad
     - role: ui
