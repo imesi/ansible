@@ -39,3 +39,10 @@
   roles:
     - role: base
     - role: ssh
+
+- name: docker linux
+  hosts: docker
+  roles:
+    - role: base
+    - role: ssh
+    - role: docker
