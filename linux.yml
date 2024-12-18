@@ -46,3 +46,10 @@
     - role: base
     - role: ssh
     - role: docker
+
+- name: samba share hosts
+  hosts: sambashare
+  roles:
+    - role: base
+    - role: ssh
+    - role: sambashare
