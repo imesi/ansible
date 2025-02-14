@@ -47,6 +47,12 @@
     - role: ssh
     - role: docker
 
+- name: storage server
+  hosts: storage_server
+  roles:
+    - role: base
+    - role: ssh
+
 - name: samba share hosts
   hosts: sambashare
   roles:
