@@ -3,10 +3,12 @@
   roles:
     - role: base
     - role: ssh
-    - role: grub
-    - role: sssd-ad
-    - role: pam_mount
+    - role: sssd-ad-uspdev
     - role: ui
     - role: dev
     - role: dev-x
     - role: lab
+    - role: grub
+      when: skip_grub is undefined
+    - role: pam_mount
+      when: skip_pam_mount is undefined

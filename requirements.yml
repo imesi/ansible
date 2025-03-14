@@ -1,0 +1,2 @@
+- name: sssd-ad-uspdev
+  src: https://github.com/uspdev/ansible-role-sssd-ad
