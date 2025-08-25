@@ -1,0 +1,8 @@
+- name: lobby
+  hosts: lobby
+  roles:
+    - role: base
+    - role: ssh
+    - role: ocs
+    - role: ui
+    - role: lobby
