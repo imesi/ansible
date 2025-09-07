@@ -7,4 +7,5 @@
     - role: sssd-ad
     - role: pam_mount
     - role: dev
+    - role: texliveopt
     - role: brucutu
