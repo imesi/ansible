@@ -1,0 +1,6 @@
+- name: rcranlab
+  hosts:
+    - lab
+    - brucutuX
+  roles:
+    - role: rcran

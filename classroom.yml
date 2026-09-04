@@ -5,4 +5,5 @@
     - role: ssh
     - role: grub
     - role: ui
+    - role: rcran
     - role: classroom
