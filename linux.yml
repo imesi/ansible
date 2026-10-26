@@ -26,6 +26,14 @@
     - role: ssh
     - role: sssd-ad
 
+- name: apache nfs cloud linux
+  hosts: apache-nfs-cloud
+  roles:
+    - role: base
+    - role: ssh
+    - role: sssd-ad
+    - role: apache
+
 - name: ssh server linux
   hosts: ssh
   roles:
